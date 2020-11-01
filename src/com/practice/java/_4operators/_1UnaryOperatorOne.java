@@ -1,6 +1,6 @@
 package com.practice.java._4operators;
 
-public class _1UnaryOperator {
+public class _1UnaryOperatorOne {
 
     static int x=10;
 
