@@ -1,4 +1,4 @@
-package com.practice.java._5controlstatements;
+package com.practice.java._5controlstatements._1ifelseexample;
 
 public class _3IfElseLeapYear {
 
