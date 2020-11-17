@@ -1,4 +1,4 @@
-package com.practice.java._5controlstatements._1ifelseexample;
+package com.practice.java._5controlstatements._1ifelsestatement;
 
 public class _6NestedIfElseStatement {
 
