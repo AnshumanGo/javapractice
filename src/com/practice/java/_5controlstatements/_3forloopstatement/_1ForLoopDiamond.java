@@ -31,7 +31,8 @@ public class _1ForLoopDiamond {
             for(int j=1;j < level-i; j++){
                 System.out.print("*");
             }
-            System.out.println();
+            if(i<=level-2)
+                System.out.println();
         }
     }
 }
