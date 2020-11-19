@@ -1,4 +1,4 @@
-package com.practice.java._9Abstraction;
+package com.practice.java._9javaabstraction;
 
 public class _2InterfaceAbstraction {
 

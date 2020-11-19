@@ -1,6 +1,6 @@
-package com.practice.java._9Abstraction;
+package com.practice.java._9javaabstraction;
 
-public class _1AbstractClass {
+public class _1Abstraction {
 
     public static void main(String[] args) {
 
