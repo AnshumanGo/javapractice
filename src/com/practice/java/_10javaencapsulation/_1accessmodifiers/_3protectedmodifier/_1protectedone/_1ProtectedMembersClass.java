@@ -1,4 +1,4 @@
-package com.practice.java._10javaencapsulation._3protectedmodifier._1protectedone;
+package com.practice.java._10javaencapsulation._1accessmodifiers._3protectedmodifier._1protectedone;
 
 public class _1ProtectedMembersClass {
 

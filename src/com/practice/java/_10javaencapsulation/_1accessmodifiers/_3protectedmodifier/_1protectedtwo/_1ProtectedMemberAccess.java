@@ -1,6 +1,6 @@
-package com.practice.java._10javaencapsulation._3protectedmodifier._1protectedtwo;
+package com.practice.java._10javaencapsulation._1accessmodifiers._3protectedmodifier._1protectedtwo;
 
-import com.practice.java._10javaencapsulation._3protectedmodifier._1protectedone._1ProtectedMembersClass;
+import com.practice.java._10javaencapsulation._1accessmodifiers._3protectedmodifier._1protectedone._1ProtectedMembersClass;
 
 public class _1ProtectedMemberAccess extends _1ProtectedMembersClass {
 

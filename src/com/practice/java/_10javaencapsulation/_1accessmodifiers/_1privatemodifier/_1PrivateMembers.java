@@ -1,4 +1,4 @@
-package com.practice.java._10javaencapsulation._1privatemodifier;
+package com.practice.java._10javaencapsulation._1accessmodifiers._1privatemodifier;
 
 public class _1PrivateMembers {
 
