@@ -23,8 +23,8 @@ public class _1JavaObjectCloning implements Cloneable{
 
             _1JavaObjectCloning s2 = (_1JavaObjectCloning) s1.clone();
 
-            System.out.println(s1.rollNo + " " + s1.rollNo);
-            System.out.println(s2.rollNo + " " + s2.rollNo);
+            System.out.println(s1.rollNo + " " + s1.name);
+            System.out.println(s2.rollNo + " " + s2.name);
         }catch (CloneNotSupportedException exception){}
     }
 }
