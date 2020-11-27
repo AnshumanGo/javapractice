@@ -6,28 +6,42 @@ public class _3FunctionalInterfaceAbstraction {
 
         ParentFunctionalInterface.runParent();
 
-        ChildFunctionalInterfaceOne.runChildOne();
+        ChildFunctionalInterfaceOne.runParent();
+
+        ChildFunctionalInterfaceTwo.runParent();
 
         System.out.println("***************");
 
         ChildFunctionalInterfaceTwo childFunctionalInterfaceTwo
-                = new ChildFunctionalInterfaceImplementation();
-        childFunctionalInterfaceTwo.testParent();
+                = new ChildFunctionalInterfaceImplementationOne();
         childFunctionalInterfaceTwo.printChildOne();
-        childFunctionalInterfaceTwo.testChildOne();
+        childFunctionalInterfaceTwo.testParent();
 
         System.out.println("**************");
 
-        ChildFunctionalInterfaceImplementation childFunctionalInterfaceImplementation
-                = (ChildFunctionalInterfaceImplementation) childFunctionalInterfaceTwo;
-        childFunctionalInterfaceImplementation.testParent();
-        childFunctionalInterfaceImplementation.printChildOne();
-        childFunctionalInterfaceImplementation.testChildOne();
+        ChildFunctionalInterfaceImplementationOne childFunctionalInterfaceImplementationOne
+                = (ChildFunctionalInterfaceImplementationOne) childFunctionalInterfaceTwo;
+        childFunctionalInterfaceImplementationOne.printChildOne();
+        childFunctionalInterfaceImplementationOne.testParent();
+
+        System.out.println("***************");
+
+        ChildFunctionalInterfaceOne childFunctionalInterfaceOne
+                = new ChildFunctionalInterfaceImplementationTwo();
+        childFunctionalInterfaceOne.printChildOne();
+        childFunctionalInterfaceOne.testParent();
+
+        System.out.println("**************");
+
+        ChildFunctionalInterfaceImplementationTwo childFunctionalInterfaceImplementationTwo
+                = (ChildFunctionalInterfaceImplementationTwo) childFunctionalInterfaceOne;
+        childFunctionalInterfaceImplementationTwo.printChildOne();
+        childFunctionalInterfaceImplementationTwo.testParent();
     }
 }
 
 interface ParentFunctionalInterface{
-    //Default and static method are not visible in extending interface
+    //Default and static method are not visible in extending interface and static methods are not visible to implementing class
     default void testParent(){
         System.out.println("ParentFunctionalInterface testParent");
     }
@@ -45,12 +59,12 @@ interface ChildFunctionalInterfaceOne extends ParentFunctionalInterface{
 
     void printChildOne();
 
-    //Default and static method are not visible in extending interface
-    default void testChildOne(){
+    //Default and static method are not visible in extending interface and static methods are not visible to implementing class
+    default void testParent(){
         System.out.println("ChildFunctionalInterfaceOne testChildOne");
     }
 
-    static void runChildOne(){
+    static void runParent(){
         System.out.println("ChildFunctionalInterfaceOne runChildOne");
     }
 }
@@ -60,24 +74,51 @@ interface ChildFunctionalInterfaceTwo extends ChildFunctionalInterfaceOne{
 
     //Default and static method are not visible in extending interface
     //void callChildTwo();//Functional interface cant have more than one abstract method other that abstract object class method
+    default void testParent(){
+        System.out.println("ChildFunctionalInterfaceTwo testChildOne");
+    }
+
+    static void runParent(){
+        System.out.println("ChildFunctionalInterfaceTwo runChildOne");
+    }
 }
 
 //Class implementing interface need to implement default and abstract methods
-class ChildFunctionalInterfaceImplementation implements ChildFunctionalInterfaceTwo{
+class ChildFunctionalInterfaceImplementationOne implements ChildFunctionalInterfaceTwo{
 
-    @Override
+    /*@Override
     public void testParent() {
 
-        System.out.println("ChildFunctionalInterfaceImplementation testParent");
-    }
+        System.out.println("ChildFunctionalInterfaceImplementationOne testParent");
+    }*/
 
     @Override
     public void printChildOne() {
-        System.out.println("ChildFunctionalInterfaceImplementation printChildOne");
+        System.out.println("ChildFunctionalInterfaceImplementationOne printChildOne");
     }
-
+/*
     @Override
     public void testChildOne() {
-        System.out.println("ChildFunctionalInterfaceImplementation testChildOne");
+        System.out.println("ChildFunctionalInterfaceImplementationOne testChildOne");
+    }*/
+}
+
+//Class implementing interface need to implement default and abstract methods
+class ChildFunctionalInterfaceImplementationTwo implements ChildFunctionalInterfaceOne{
+
+    /*@Override
+    public void testParent() {
+
+        System.out.println("ChildFunctionalInterfaceImplementationTwo testParent");
+    }*/
+
+    @Override
+    public void printChildOne() {
+        System.out.println("ChildFunctionalInterfaceImplementationTwo printChildOne");
     }
+/*
+    @Override
+    public void testChildOne() {
+        System.out.println("ChildFunctionalInterfaceImplementationTwo testChildOne");
+    }*/
 }

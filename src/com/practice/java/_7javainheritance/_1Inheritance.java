@@ -68,6 +68,6 @@ class EcEngineeringStudent extends EngineeringStudent{
         return "id = " + id +
                 ", name= " + name +
                 ", engineeringSubject = " + engineeringSubject +
-                ", csEngineeringSubject = " + ecEngineeringSubject;
+                ", ecEngineeringSubject = " + ecEngineeringSubject;
     }
 }

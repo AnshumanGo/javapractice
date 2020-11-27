@@ -1,16 +1,15 @@
 package com.practice.java._14exceptionhandling;
 
-import java.util.regex.Pattern;
-
 public class _3JavaExplicitlyThrowException {
 
-    static void validate(String name) throws Exception {
+    // explicitly throw an exception using throw keyword
+    static void validate(String name) {
         if(name.contains("&"))
-            throw new Exception("not valid");
+            throw new RuntimeException("not valid");
         else
             System.out.println("welcome to vote");
     }
-    public static void main(String args[]) throws Exception {
+    public static void main(String args[]){
         validate("asdfsd&");
         System.out.println("rest of the code...");
     }
