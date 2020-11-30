@@ -40,6 +40,7 @@ public class _3JavaLocalInnerClass {
         l.msg();
     }
     public static void main(String args[]){
+
         _3JavaLocalInnerClass javaLocalInnerClass=new _3JavaLocalInnerClass();
         javaLocalInnerClass.display();
     }
