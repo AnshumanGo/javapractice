@@ -1,6 +1,6 @@
 package com.practice.java._15javamultithreading;
 
-public class _9ThreadSynchronizationMethod {
+public class _9JavaThreadSynchronizationMethod {
 
     synchronized void printTable(int n){//synchronized method
 
@@ -20,7 +20,7 @@ public class _9ThreadSynchronizationMethod {
 
     public static void main(String args[]){
 
-        final _9ThreadSynchronizationMethod obj = new _9ThreadSynchronizationMethod();//only one object
+        final _9JavaThreadSynchronizationMethod obj = new _9JavaThreadSynchronizationMethod();//only one object
 
         Thread t1=new Thread(){
             public void run(){
