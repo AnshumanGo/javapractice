@@ -1,5 +1,10 @@
 package com.practice.java._9javaabstraction;
 
+interface ParentInterfaceAbstractionOne {
+
+    void print();
+}
+
 public class _2InterfaceAbstraction {
 
     public static void main(String[] args) {
@@ -27,21 +32,16 @@ public class _2InterfaceAbstraction {
     }
 }
 
-interface ParentInterfaceAbstractionOne{
-
-    void print();
-}
-
 /* Implement abstract method or declare class as abstract
 class ChildInterfaceAbstractionOne implements  ParentInterfaceAbstractionOne{
 
 }*/
 
-abstract class ChildInterfaceAbstractionOne implements ParentInterfaceAbstractionOne{
+abstract class ChildInterfaceAbstractionOne implements ParentInterfaceAbstractionOne {
     //public abstract void print();
 }
 
-class ChildInterfaceAbstractionTwo implements ParentInterfaceAbstractionOne{
+class ChildInterfaceAbstractionTwo implements ParentInterfaceAbstractionOne {
 
     public void print() {
 

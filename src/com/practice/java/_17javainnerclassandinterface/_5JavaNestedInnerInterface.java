@@ -14,26 +14,26 @@ package com.practice.java._17javainnerclassandinterface;
 
 */
 
-public class _5JavaNestedInnerInterface implements Details.Message{
-
-    public void msg(){
-
-        System.out.println("Hello nested interface");
-    }
-
-    public static void main(String args[]){
-
-        Details.Message message=new _5JavaNestedInnerInterface();//upcasting here
-        message.msg();
-    }
-}
-
-interface Details{
+interface Details {
 
     void print();
 
-    interface Message{
+    interface Message {
 
         void msg();
+    }
+}
+
+public class _5JavaNestedInnerInterface implements Details.Message {
+
+    public static void main(String args[]) {
+
+        Details.Message message = new _5JavaNestedInnerInterface();//upcasting here
+        message.msg();
+    }
+
+    public void msg() {
+
+        System.out.println("Hello nested interface");
     }
 }

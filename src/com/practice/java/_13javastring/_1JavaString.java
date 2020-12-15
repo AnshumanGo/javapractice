@@ -10,10 +10,10 @@ public class _1JavaString {
         String strNewValueTwo = new String("String New Value");
 
         //Use System.identityHashCode to get proper hashcode in case of String variable created as new String()
-        System.out.println("Literal strLiteralValueOne (+"+ System.identityHashCode(strLiteralValueOne) +") : "+ strLiteralValueOne);
-        System.out.println("Literal strLiteralValueTwo (+"+ System.identityHashCode(strLiteralValueTwo) +") : "+ strLiteralValueTwo);
-        System.out.println("New Keyword (+"+ System.identityHashCode(strNewValueOne) +") : "+ strNewValueOne);
-        System.out.println("New Keyword (+"+ System.identityHashCode(strNewValueTwo) +") : "+ strNewValueTwo);
+        System.out.println("Literal strLiteralValueOne (+" + System.identityHashCode(strLiteralValueOne) + ") : " + strLiteralValueOne);
+        System.out.println("Literal strLiteralValueTwo (+" + System.identityHashCode(strLiteralValueTwo) + ") : " + strLiteralValueTwo);
+        System.out.println("New Keyword (+" + System.identityHashCode(strNewValueOne) + ") : " + strNewValueOne);
+        System.out.println("New Keyword (+" + System.identityHashCode(strNewValueTwo) + ") : " + strNewValueTwo);
     }
 
 

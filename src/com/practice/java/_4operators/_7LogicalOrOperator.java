@@ -7,12 +7,12 @@ public class _7LogicalOrOperator {
 
     public static void main(String[] args) {
 
-        int a=10,b=20 , c=5;
+        int a = 10, b = 20, c = 5;
 
         //Logical OR operator does not check both boolean condition if first condition is true
-        System.out.println(isLessThanIntValue(a,b) || isGreaterThanIntValue(a,c));
-        System.out.println(isLessThanIntValue(a,b) || isLessThanIntValue(a,c));
-        System.out.println(isGreaterThanIntValue(a,b) || isLessThanIntValue(a,c));
-        System.out.println(isGreaterThanIntValue(a,b) || isGreaterThanIntValue(a,c));
+        System.out.println(isLessThanIntValue(a, b) || isGreaterThanIntValue(a, c));
+        System.out.println(isLessThanIntValue(a, b) || isLessThanIntValue(a, c));
+        System.out.println(isGreaterThanIntValue(a, b) || isLessThanIntValue(a, c));
+        System.out.println(isGreaterThanIntValue(a, b) || isGreaterThanIntValue(a, c));
     }
 }

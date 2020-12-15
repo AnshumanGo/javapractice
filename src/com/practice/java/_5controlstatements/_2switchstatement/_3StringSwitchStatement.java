@@ -6,7 +6,7 @@ public class _3StringSwitchStatement {
 
         String classStndard = "eigth";
 
-        switch (classStndard){
+        switch (classStndard) {
 
             case "fifth":
             case "eighth":

@@ -13,20 +13,21 @@ public class _1PrivateMembers {
     }
 }
 
-class PrivateMember{
+class PrivateMember {
 
-    private int i=10;
-    private int getIntValue(){
+    private int i = 10;
 
-        return i;
-    }
-
-    PrivateMember(){
+    PrivateMember() {
 
         System.out.println("PrivateMember no arg constructor");
     }
 
-    private PrivateMember( int i){
-        this.i=i;
+    private PrivateMember(int i) {
+        this.i = i;
+    }
+
+    private int getIntValue() {
+
+        return i;
     }
 }

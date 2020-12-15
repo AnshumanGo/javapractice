@@ -2,12 +2,6 @@ package com.practice.java._15javamultithreading;
 
 public class _7JavaSingleTaskMultipleThread extends Thread {
 
-    @Override
-    public void run(){
-
-        System.out.println("Java Single Task Multiple Thread");
-    }
-
     public static void main(String[] args) {
 
         _7JavaSingleTaskMultipleThread javaSingleTaskMultipleThreadOne = new _7JavaSingleTaskMultipleThread();
@@ -18,5 +12,11 @@ public class _7JavaSingleTaskMultipleThread extends Thread {
         javaSingleTaskMultipleThreadOne.start();
         javaSingleTaskMultipleThreadTwo.start();
         javaSingleTaskMultipleThreadThree.start();
+    }
+
+    @Override
+    public void run() {
+
+        System.out.println("Java Single Task Multiple Thread");
     }
 }

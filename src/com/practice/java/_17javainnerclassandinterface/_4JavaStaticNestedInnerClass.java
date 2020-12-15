@@ -18,25 +18,25 @@ package com.practice.java._17javainnerclassandinterface;
 
 public class _4JavaStaticNestedInnerClass {
 
-    static int data=30;
+    static int data = 30;
 
-    static class Inner{
+    public static void main(String args[]) {
 
-        void msgOne(){
-
-            System.out.println("data is "+data);
-        }
-
-        static void msgTwo(){
-
-            System.out.println("data is "+data);
-        }
-    }
-
-    public static void main(String args[]){
-
-        _4JavaStaticNestedInnerClass.Inner obj=new _4JavaStaticNestedInnerClass.Inner();
+        _4JavaStaticNestedInnerClass.Inner obj = new _4JavaStaticNestedInnerClass.Inner();
         obj.msgOne();
         _4JavaStaticNestedInnerClass.Inner.msgTwo();
+    }
+
+    static class Inner {
+
+        static void msgTwo() {
+
+            System.out.println("data is " + data);
+        }
+
+        void msgOne() {
+
+            System.out.println("data is " + data);
+        }
     }
 }

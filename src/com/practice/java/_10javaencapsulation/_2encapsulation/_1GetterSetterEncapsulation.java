@@ -10,7 +10,7 @@ public class _1GetterSetterEncapsulation {
     }
 }
 
-class GetterSetterTest{
+class GetterSetterTest {
 
     private String strVal;
 

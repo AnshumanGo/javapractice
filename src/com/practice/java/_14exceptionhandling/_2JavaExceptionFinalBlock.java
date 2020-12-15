@@ -4,24 +4,17 @@ public class _2JavaExceptionFinalBlock {
 
     public static void main(String[] args) {
 
-        try{
-            int a[]=new int[5];
+        try {
+            int a[] = new int[5];
 
             System.out.println(a[10]);
-        }
-        catch(ArithmeticException e)
-        {
+        } catch (ArithmeticException e) {
             System.out.println("Arithmetic Exception occurs");
-        }
-        catch(ArrayIndexOutOfBoundsException e)
-        {
+        } catch (ArrayIndexOutOfBoundsException e) {
             System.out.println("ArrayIndexOutOfBounds Exception occurs");
-        }
-        catch(Exception e)
-        {
+        } catch (Exception e) {
             System.out.println("Parent Exception occurs");
-        }
-        finally {
+        } finally {
             System.out.println("Finally block always execute and can be defined only ones");
         }/*
         finally {

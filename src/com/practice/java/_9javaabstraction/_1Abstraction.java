@@ -16,10 +16,11 @@ public class _1Abstraction {
 
 abstract class ParentAbstractClassOne {
 
-    ParentAbstractClassOne(){
+    ParentAbstractClassOne() {
 
         System.out.println("Parent Abstract Class One");
     }
+
     abstract void run();
 }
 
@@ -34,21 +35,21 @@ abstract class ChildAbstractClassTwo extends ParentAbstractClassOne {
 
 class ChildAbstractClassThree extends ParentAbstractClassOne {
 
-    void run(){
+    void run() {
 
         System.out.println("Child Abstract Class Three");
     }
 }
 
-abstract class ParentAbstractClassTwo{
+abstract class ParentAbstractClassTwo {
 
 }
 
-class ChildAbstractClassFour extends ParentAbstractClassTwo{
+class ChildAbstractClassFour extends ParentAbstractClassTwo {
 
 }
 
-abstract class ChildAbstractClassFive extends ParentAbstractClassTwo{
+abstract class ChildAbstractClassFive extends ParentAbstractClassTwo {
 
 }
 

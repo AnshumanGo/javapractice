@@ -6,25 +6,9 @@ public class _4JavaScheduledThreadPool implements Runnable {
 
     private String message;
 
-    public _4JavaScheduledThreadPool(String s){
+    public _4JavaScheduledThreadPool(String s) {
 
-        this.message=s;
-    }
-
-    public void run() {
-
-        System.out.println(Thread.currentThread().getName()+" (Start) message = "+message);
-        processMessage();
-        System.out.println(Thread.currentThread().getName()+" (End)");
-    }
-
-    private void processMessage() {
-        try {
-
-            Thread.sleep(10);
-        } catch (InterruptedException e) {
-
-            e.printStackTrace(); }
+        this.message = s;
     }
 
     public static void main(String[] args) throws InterruptedException {
@@ -52,5 +36,22 @@ public class _4JavaScheduledThreadPool implements Runnable {
         }
 
         System.out.println("Finished all threads");
+    }
+
+    public void run() {
+
+        System.out.println(Thread.currentThread().getName() + " (Start) message = " + message);
+        processMessage();
+        System.out.println(Thread.currentThread().getName() + " (End)");
+    }
+
+    private void processMessage() {
+        try {
+
+            Thread.sleep(10);
+        } catch (InterruptedException e) {
+
+            e.printStackTrace();
+        }
     }
 }

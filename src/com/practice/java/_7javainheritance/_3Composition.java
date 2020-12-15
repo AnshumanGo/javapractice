@@ -2,11 +2,11 @@ package com.practice.java._7javainheritance;
 
 public class _3Composition {
 
-        public static void main(String args[]){
-            Square s=new Square(new CalculationUtil());
-            double result=s.area(5);
-            System.out.println(result);
-        }
+    public static void main(String args[]) {
+        Square s = new Square(new CalculationUtil());
+        double result = s.area(5);
+        System.out.println(result);
+    }
 }
 
 /*
@@ -17,7 +17,7 @@ class Square {
 
     private final CalculationUtil calculation;
 
-    Square(CalculationUtil calculation){
+    Square(CalculationUtil calculation) {
 
         this.calculation = new CalculationUtil();
     }

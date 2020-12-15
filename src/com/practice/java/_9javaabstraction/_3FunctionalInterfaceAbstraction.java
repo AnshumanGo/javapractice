@@ -1,5 +1,48 @@
 package com.practice.java._9javaabstraction;
 
+interface ParentFunctionalInterface {
+    static void runParent() {
+        System.out.println("ParentFunctionalInterface runParent");
+    }
+
+    //Default and static method are not visible in extending interface and static methods are not visible to implementing class
+    default void testParent() {
+        System.out.println("ParentFunctionalInterface testParent");
+    }
+}
+
+//FunctionalInterface can have any number of default, static methods but can contain only one abstract method.
+// It can also declare methods of object class.
+//Functional interface can only extend interface when it does not have any abstract method.
+@FunctionalInterface
+interface ChildFunctionalInterfaceOne extends ParentFunctionalInterface {
+
+    static void runParent() {
+        System.out.println("ChildFunctionalInterfaceOne runChildOne");
+    }
+
+    void printChildOne();
+
+    //Default and static method are not visible in extending interface and static methods are not visible to implementing class
+    default void testParent() {
+        System.out.println("ChildFunctionalInterfaceOne testChildOne");
+    }
+}
+
+@FunctionalInterface
+interface ChildFunctionalInterfaceTwo extends ChildFunctionalInterfaceOne {
+
+    static void runParent() {
+        System.out.println("ChildFunctionalInterfaceTwo runChildOne");
+    }
+
+    //Default and static method are not visible in extending interface
+    //void callChildTwo();//Functional interface cant have more than one abstract method other that abstract object class method
+    default void testParent() {
+        System.out.println("ChildFunctionalInterfaceTwo testChildOne");
+    }
+}
+
 public class _3FunctionalInterfaceAbstraction {
 
     public static void main(String[] args) {
@@ -40,51 +83,8 @@ public class _3FunctionalInterfaceAbstraction {
     }
 }
 
-interface ParentFunctionalInterface{
-    //Default and static method are not visible in extending interface and static methods are not visible to implementing class
-    default void testParent(){
-        System.out.println("ParentFunctionalInterface testParent");
-    }
-
-    static void runParent(){
-        System.out.println("ParentFunctionalInterface runParent");
-    }
-}
-
-//FunctionalInterface can have any number of default, static methods but can contain only one abstract method.
-// It can also declare methods of object class.
-//Functional interface can only extend interface when it does not have any abstract method.
-@FunctionalInterface
-interface ChildFunctionalInterfaceOne extends ParentFunctionalInterface{
-
-    void printChildOne();
-
-    //Default and static method are not visible in extending interface and static methods are not visible to implementing class
-    default void testParent(){
-        System.out.println("ChildFunctionalInterfaceOne testChildOne");
-    }
-
-    static void runParent(){
-        System.out.println("ChildFunctionalInterfaceOne runChildOne");
-    }
-}
-
-@FunctionalInterface
-interface ChildFunctionalInterfaceTwo extends ChildFunctionalInterfaceOne{
-
-    //Default and static method are not visible in extending interface
-    //void callChildTwo();//Functional interface cant have more than one abstract method other that abstract object class method
-    default void testParent(){
-        System.out.println("ChildFunctionalInterfaceTwo testChildOne");
-    }
-
-    static void runParent(){
-        System.out.println("ChildFunctionalInterfaceTwo runChildOne");
-    }
-}
-
 //Class implementing interface need to implement default and abstract methods
-class ChildFunctionalInterfaceImplementationOne implements ChildFunctionalInterfaceTwo{
+class ChildFunctionalInterfaceImplementationOne implements ChildFunctionalInterfaceTwo {
 
     /*@Override
     public void testParent() {
@@ -104,7 +104,7 @@ class ChildFunctionalInterfaceImplementationOne implements ChildFunctionalInterf
 }
 
 //Class implementing interface need to implement default and abstract methods
-class ChildFunctionalInterfaceImplementationTwo implements ChildFunctionalInterfaceOne{
+class ChildFunctionalInterfaceImplementationTwo implements ChildFunctionalInterfaceOne {
 
     /*@Override
     public void testParent() {

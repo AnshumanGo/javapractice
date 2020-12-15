@@ -35,7 +35,7 @@ public class _6JavaExceptionHandlingWithOverriding {
         System.out.println("*********************");
 
         ParentClassNoException parentClassNoExceptionThree
-                = parentClassNoExceptionChildThree ;
+                = parentClassNoExceptionChildThree;
         parentClassNoExceptionThree.test();
 
         System.out.println("*********************");
@@ -54,14 +54,14 @@ public class _6JavaExceptionHandlingWithOverriding {
     }
 }
 
-class ParentClassNoException{
+class ParentClassNoException {
 
-    void test(){
+    void test() {
         System.out.println("ParentClassNoException test");
     }
 }
 
-class ParentClassNoExceptionChild extends ParentClassNoException{
+class ParentClassNoExceptionChild extends ParentClassNoException {
 
     /*If the superclass method does not declare an exception,
     subclass overridden method cannot declare the checked exception.
@@ -73,25 +73,25 @@ class ParentClassNoExceptionChild extends ParentClassNoException{
     /*If the superclass method does not declare an exception,
     subclass overridden method cannot declare the checked exception but can declare unchecked exception. */
     @Override
-    void test() throws ArithmeticException{
+    void test() throws ArithmeticException {
         System.out.println("ParentClassNoExceptionChild test");
     }
 }
 
-class ParentClassException{
+class ParentClassException {
 
-    void test() throws RuntimeException{
+    void test() throws RuntimeException {
 
         System.out.println("ParentClassException with Runtime Exception test");
     }
 
-    void stub() throws RuntimeException{
+    void stub() throws RuntimeException {
 
         System.out.println("ParentClassException with Runtime Exception Stub");
     }
 }
 
-class ParentClassExceptionChild extends ParentClassException{
+class ParentClassExceptionChild extends ParentClassException {
 
     /*//If subclass overridden method declares parent exception, it give CTE
     @Override
@@ -101,14 +101,14 @@ class ParentClassExceptionChild extends ParentClassException{
 
     //If subclass overridden method declares same exception
     @Override
-    void test() throws RuntimeException{
+    void test() throws RuntimeException {
 
         System.out.println("ParentClassExceptionChild with Runtime Exception test");
     }
 
     //If subclass overridden method declares sub class of exception
     @Override
-    void stub() throws ArithmeticException{
+    void stub() throws ArithmeticException {
 
         System.out.println("ParentClassExceptionChild with Runtime Exception Stub");
     }

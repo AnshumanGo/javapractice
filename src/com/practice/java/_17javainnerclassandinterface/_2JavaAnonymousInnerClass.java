@@ -15,11 +15,11 @@ package com.practice.java._17javainnerclassandinterface;
 
 public class _2JavaAnonymousInnerClass {
 
-    public static void main(String args[]){
+    public static void main(String args[]) {
 
-        Person p=new Person(){
+        Person p = new Person() {
 
-            void eat(){
+            void eat() {
 
                 System.out.println("nice fruits");
             }
@@ -29,7 +29,7 @@ public class _2JavaAnonymousInnerClass {
     }
 }
 
-abstract class Person{
+abstract class Person {
 
     abstract void eat();
 }

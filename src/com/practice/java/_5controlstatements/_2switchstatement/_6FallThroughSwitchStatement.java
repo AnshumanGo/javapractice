@@ -6,7 +6,7 @@ public class _6FallThroughSwitchStatement {
 
         int code = 10;
 
-        switch (code){
+        switch (code) {
 
             case 10:
                 System.out.println(10);

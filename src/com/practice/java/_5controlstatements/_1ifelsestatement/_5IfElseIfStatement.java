@@ -4,12 +4,12 @@ public class _5IfElseIfStatement {
 
     public static void main(String[] args) {
 
-        int value=-20;
-        if(value>0){
+        int value = -20;
+        if (value > 0) {
             System.out.println("Positive");
-        }else if(value<0){
+        } else if (value < 0) {
             System.out.println("Negative");
-        }else{
+        } else {
             System.out.println("Zero");
         }
     }

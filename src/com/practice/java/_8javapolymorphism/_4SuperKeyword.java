@@ -23,30 +23,32 @@ public class _4SuperKeyword {
 }
 
 
-class SuperParent{
+class SuperParent {
 
     String name = "SuperParent";
 
-    SuperParent(){
+    SuperParent() {
 
         System.out.println("SuperParent Constructor");
     }
-    void test(){
+
+    void test() {
         System.out.println("SuperParent test");
     }
 }
 
-class SuperChild extends SuperParent{
+class SuperChild extends SuperParent {
 
-    SuperChild(){
+    SuperChild() {
 
         super();
         //this(); //Can't call super() and this () at same time in same constructor
         System.out.println("SuperChild Constructor");
     }
+
     @Override
-    void test(){
-        System.out.println(this +"  "+ super.name + " name");
-        System.out.println(this +"  "+ "SuperChild test");
+    void test() {
+        System.out.println(this + "  " + super.name + " name");
+        System.out.println(this + "  " + "SuperChild test");
     }
 }

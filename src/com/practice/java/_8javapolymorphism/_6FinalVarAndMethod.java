@@ -15,9 +15,9 @@ public class _6FinalVarAndMethod {
     }
 }
 
-class ParentFinalVarAndMethod{
+class ParentFinalVarAndMethod {
 
-    static final int i =90;
+    static final int i = 90;
 
     static {
 
@@ -30,17 +30,17 @@ class ParentFinalVarAndMethod{
         //strVal = "two"; // Can't assign value to already initialized final non-static variable
     }
 
-    ParentFinalVarAndMethod(){
+    ParentFinalVarAndMethod() {
 
         //this.strVal="three";// Can't assign value to already initialized final non-static variable
     }
 
-    ParentFinalVarAndMethod(int i){
+    ParentFinalVarAndMethod(int i) {
 
         //this.strVal="three";// Can't assign value to already initialized final non-static variable
     }
 
-    final char test(){
+    final char test() {
 
         return 'y';
     }
@@ -57,12 +57,12 @@ class ChildFinalVarAndMethod extends ParentFinalVarAndMethod {
         //strVal = "two"; // Can't assign value to already initialized final non-static variable
     }
 
-    ChildFinalVarAndMethod(){
+    ChildFinalVarAndMethod() {
 
         //this.strVal="three";// Can't assign value to already initialized final non-static variable
     }
 
-    ChildFinalVarAndMethod(int i){
+    ChildFinalVarAndMethod(int i) {
 
         //this.strVal="three";// Can't assign value to already initialized final non-static variable
     }

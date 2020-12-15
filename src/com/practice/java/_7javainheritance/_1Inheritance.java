@@ -9,42 +9,42 @@ public class _1Inheritance {
         studentOne.name = "engone";
         studentOne.engineeringSubject = "common engineering subject";
 
-        System.out.println("id = "+studentOne.id+", name = "+studentOne.name+", engineeringSubject = "+studentOne.engineeringSubject);
+        System.out.println("id = " + studentOne.id + ", name = " + studentOne.name + ", engineeringSubject = " + studentOne.engineeringSubject);
 
 
         CsEngineeringStudent studentTwo = new CsEngineeringStudent();
-        studentTwo.id=2;
-        studentTwo.name="csone";
-        studentTwo.engineeringSubject="common engineering subjects";
-        studentTwo.csEngineeringSubject="cs engineering subjects";
+        studentTwo.id = 2;
+        studentTwo.name = "csone";
+        studentTwo.engineeringSubject = "common engineering subjects";
+        studentTwo.csEngineeringSubject = "cs engineering subjects";
 
         //Details of CsEngineeringStudent object is shown using overriding toString method
         System.out.println(studentTwo);
 
 
         EcEngineeringStudent studentThree = new EcEngineeringStudent();
-        studentThree.id=3;
-        studentThree.name="econe";
-        studentThree.engineeringSubject="common engineering subjects";
-        studentThree.ecEngineeringSubject="ec engineering subjects";
+        studentThree.id = 3;
+        studentThree.name = "econe";
+        studentThree.engineeringSubject = "common engineering subjects";
+        studentThree.ecEngineeringSubject = "ec engineering subjects";
 
         //Details of EcEngineeringStudent object is shown using overriding toString method
         System.out.println(studentThree);
     }
 }
 
-class Student{
+class Student {
 
     int id;
     String name;
 }
 
-class EngineeringStudent extends Student{
+class EngineeringStudent extends Student {
 
     String engineeringSubject;
 }
 
-class CsEngineeringStudent extends EngineeringStudent{
+class CsEngineeringStudent extends EngineeringStudent {
 
     String csEngineeringSubject;
 
@@ -58,7 +58,7 @@ class CsEngineeringStudent extends EngineeringStudent{
     }
 }
 
-class EcEngineeringStudent extends EngineeringStudent{
+class EcEngineeringStudent extends EngineeringStudent {
 
     String ecEngineeringSubject;
 

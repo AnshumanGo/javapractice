@@ -11,47 +11,48 @@ public class _11JavaThreadStaticSynchronization {
        * But there can be interference between t1 and t3 or t2 and t4 because t1 acquires another lock
        * and t3 acquires another lock.I want no interference between t1 and t3 or t2 and t4.
        * Static synchronization solves this problem. */
-    synchronized static  void printTable(int n){
+    synchronized static void printTable(int n) {
 
-        for(int i=1;i<=10;i++){
+        for (int i = 1; i <= 10; i++) {
 
-            System.out.println(n*i);
-            try{
+            System.out.println(n * i);
+            try {
 
                 Thread.sleep(400);
-            }catch(Exception e){}
+            } catch (Exception e) {
+            }
         }
     }
 
     public static void main(String[] args) {
 
-        Thread t1=new Thread(){
+        Thread t1 = new Thread() {
 
-            public void run(){
+            public void run() {
 
                 _11JavaThreadStaticSynchronization.printTable(1);
             }
         };
 
-        Thread t2=new Thread(){
+        Thread t2 = new Thread() {
 
-            public void run(){
+            public void run() {
 
                 _11JavaThreadStaticSynchronization.printTable(10);
             }
         };
 
-        Thread t3=new Thread(){
+        Thread t3 = new Thread() {
 
-            public void run(){
+            public void run() {
 
                 _11JavaThreadStaticSynchronization.printTable(100);
             }
         };
 
-        Thread t4=new Thread(){
+        Thread t4 = new Thread() {
 
-            public void run(){
+            public void run() {
 
                 _11JavaThreadStaticSynchronization.printTable(1000);
             }

@@ -13,17 +13,17 @@ public class _1JavaThreads {
     }
 }
 
-class ThreadsByThread extends Thread{
+class ThreadsByThread extends Thread {
 
-    public void run(){
+    public void run() {
 
         System.out.println("Thread is running using Thread");
     }
 }
 
-class ThreadsByRunnable implements Runnable{
+class ThreadsByRunnable implements Runnable {
 
-    public void run(){
+    public void run() {
 
         System.out.println("Thread is running using Runnable");
     }

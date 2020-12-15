@@ -26,22 +26,24 @@ in local inner class.
 
 public class _3JavaLocalInnerClass {
 
-    private int data=30;//instance variable
-    void display(){
+    private int data = 30;//instance variable
 
-        class Local{
+    public static void main(String args[]) {
 
-            void msg(){
+        _3JavaLocalInnerClass javaLocalInnerClass = new _3JavaLocalInnerClass();
+        javaLocalInnerClass.display();
+    }
+
+    void display() {
+
+        class Local {
+
+            void msg() {
 
                 System.out.println(data);
             }
         }
-        Local l=new Local();
+        Local l = new Local();
         l.msg();
-    }
-    public static void main(String args[]){
-
-        _3JavaLocalInnerClass javaLocalInnerClass=new _3JavaLocalInnerClass();
-        javaLocalInnerClass.display();
     }
 }

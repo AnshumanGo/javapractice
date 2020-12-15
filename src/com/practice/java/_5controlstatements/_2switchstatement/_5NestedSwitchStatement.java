@@ -6,8 +6,7 @@ public class _5NestedSwitchStatement {
 
         String branch = "s";
         int classStandardYear = 9;
-        switch( classStandardYear )
-        {
+        switch (classStandardYear) {
             case 1:
             case 2:
             case 3:
@@ -24,8 +23,7 @@ public class _5NestedSwitchStatement {
 
             case 9:
             case 10:
-                switch( branch )
-                {
+                switch (branch) {
 
                     case "s":
                         System.out.println("english, science, mathematics, sst, sanskrit");
@@ -41,8 +39,7 @@ public class _5NestedSwitchStatement {
 
             case 11:
             case 12:
-                switch( branch )
-                {
+                switch (branch) {
                     case "m":
                         System.out.println("physics, chemistry, mathematics, english, hindi");
                         break;

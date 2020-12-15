@@ -12,7 +12,7 @@ public class _1ProtectedMemberAccess extends _1ProtectedMembersClass {
     }
 }
 
-class _1ProtectedMemberAccessTwo{
+class _1ProtectedMemberAccessTwo {
 
     public static void main(String[] args) {
 

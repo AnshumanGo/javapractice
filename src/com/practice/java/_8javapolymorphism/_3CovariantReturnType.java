@@ -9,28 +9,28 @@ public class _3CovariantReturnType {
     }
 }
 
-class ParentCovariant{
+class ParentCovariant {
 
-    ParentCovariant get(){
+    ParentCovariant get() {
 
         return this;
     }
 
-    void print(){
+    void print() {
 
         System.out.println("From ParentCovariant");
     }
 }
 
-class ChildCovariant extends ParentCovariant{
+class ChildCovariant extends ParentCovariant {
 
     @Override
-    ChildCovariant get(){
+    ChildCovariant get() {
 
         return this;
     }
 
-    void print(){
+    void print() {
 
         System.out.println("From ChildCovariant");
     }

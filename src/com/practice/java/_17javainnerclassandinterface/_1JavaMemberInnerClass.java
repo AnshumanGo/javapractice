@@ -18,19 +18,19 @@ package com.practice.java._17javainnerclassandinterface;
     }  */
 public class _1JavaMemberInnerClass {
 
-    private int data=30;
+    private int data = 30;
 
-    class Inner{
+    public static void main(String args[]) {
 
-        void msg(){
-            System.out.println("data is "+data);
-        }
+        _1JavaMemberInnerClass javaMemberInnerClass = new _1JavaMemberInnerClass();
+        _1JavaMemberInnerClass.Inner inner = javaMemberInnerClass.new Inner();
+        inner.msg();
     }
 
-    public static void main(String args[]){
+    class Inner {
 
-        _1JavaMemberInnerClass javaMemberInnerClass=new _1JavaMemberInnerClass();
-        _1JavaMemberInnerClass.Inner inner=javaMemberInnerClass.new Inner();
-        inner.msg();
+        void msg() {
+            System.out.println("data is " + data);
+        }
     }
 }

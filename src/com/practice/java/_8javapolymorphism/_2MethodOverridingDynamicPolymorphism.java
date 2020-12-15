@@ -2,8 +2,6 @@ package com.practice.java._8javapolymorphism;
 
 public class _2MethodOverridingDynamicPolymorphism {
 
-    void run(){System.out.println("_2MethodOverridingDynamicPolymorphism");}
-
     public static void main(String[] args) {
 
         _2MethodOverridingDynamicPolymorphism methodOverridingDynamicPolymorphism
@@ -18,11 +16,16 @@ public class _2MethodOverridingDynamicPolymorphism {
         //change reference to _2MethodOverridingDynamicPolymorphismChild so that it will call run method from _2MethodOverridingDynamicPolymorphismChild
     }
 
+    void run() {
+        System.out.println("_2MethodOverridingDynamicPolymorphism");
+    }
+
 }
 
-class _2MethodOverridingDynamicPolymorphismChild extends _2MethodOverridingDynamicPolymorphism{
+class _2MethodOverridingDynamicPolymorphismChild extends _2MethodOverridingDynamicPolymorphism {
 
-    @Override//In case _2MethodOverridingDynamicPolymorphism is not having run method, comment @Override annotation
+    @Override
+//In case _2MethodOverridingDynamicPolymorphism is not having run method, comment @Override annotation
     void run() {
         System.out.println("_2MethodOverridingDynamicPolymorphismChild");
     }

@@ -15,19 +15,19 @@ public class _8JavaMultipleTaskMultipleThread {
 }
 
 
-class FirstTask implements Runnable{
+class FirstTask implements Runnable {
 
     @Override
-    public void run(){
+    public void run() {
 
         System.out.println("First Task");
     }
 }
 
-class SecondTask extends Thread{
+class SecondTask extends Thread {
 
     @Override
-    public void run(){
+    public void run() {
 
         System.out.println("Second Task");
     }

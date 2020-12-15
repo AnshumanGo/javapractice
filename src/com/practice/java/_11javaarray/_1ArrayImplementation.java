@@ -11,13 +11,13 @@ public class _1ArrayImplementation {
         array[3] = 30;
         array[4] = 90;
 
-        for (int i=0; i < array.length ; i++){
+        for (int i = 0; i < array.length; i++) {
 
             System.out.println(array[i]);
         }
 
-        char charArray[] = {'c' , 'e' , 'r' , 'g'};
-        for(int i=0; i<charArray.length; i++){
+        char charArray[] = {'c', 'e', 'r', 'g'};
+        for (int i = 0; i < charArray.length; i++) {
 
             System.out.println(charArray[i]);
         }
