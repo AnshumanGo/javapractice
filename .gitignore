@@ -35,3 +35,7 @@ out/
 classes/
 .m2/
 /.metadata/
+
+
+# Explicit files #
+abc.txt
