@@ -2,7 +2,7 @@ package com.practice.java._21javacollections;
 
 import java.util.LinkedList;
 
-public class JavaLinkedList {
+public class _2JavaLinkedList {
 
     public static void main(String args[]){
         LinkedList<String> linkedList=new LinkedList<String>();
