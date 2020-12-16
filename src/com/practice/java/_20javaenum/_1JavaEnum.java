@@ -6,6 +6,20 @@ public class _1JavaEnum {
         for (Season s : Season.values())
             System.out.println(s+" "+s.getValue());
 
+        Season season = Season.SUMMER;
+
+        switch(season){
+            case SUMMER:
+                System.out.println(season+" "+season.getValue());
+                break;
+            case WINTER:
+                System.out.println(season+" "+season.getValue());
+
+                break;
+            default:
+                System.out.println("Other");
+        }
+
     }
 }
 
