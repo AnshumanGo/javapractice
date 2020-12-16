@@ -1,6 +1,7 @@
 package com.practice.java._21javacollections;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
 public class _1JavaArrayList {
 
@@ -20,5 +21,11 @@ public class _1JavaArrayList {
         list.add("Grapes");
         //Printing the arraylist object
         System.out.println(list);
+
+        //Traversing list through Iterator
+        Iterator itr=list.iterator();//getting the Iterator
+        while(itr.hasNext()){//check if iterator has the elements
+            System.out.println(itr.next());//printing the element and move to next
+        }
     }
 }
