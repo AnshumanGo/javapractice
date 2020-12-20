@@ -38,7 +38,7 @@ public class _9JavaHashTable {
         hashtable.putIfAbsent(7,"Guava");
         System.out.println("Updated Map: "+hashtable);
         //Returns the current value, as the specified pair already exist
-        hashtable.putIfAbsent(3,"Pineapple");
+        hashtable.putIfAbsent(5,"Pineapple");
         System.out.println("Updated Map: "+hashtable);
     }
 
