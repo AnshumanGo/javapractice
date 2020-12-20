@@ -39,3 +39,5 @@ classes/
 
 # Explicit files #
 abc.txt
+JavaBufferWriterAndReaderFile.txt
+JavaBufferedOutputStreamAndBufferedInputStream.txt
