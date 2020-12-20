@@ -2,7 +2,7 @@ package com.practice.java._7javainheritance;
 
 public class _3Composition {
 
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         Square s = new Square(new CalculationUtil());
         double result = s.area(5);
         System.out.println(result);

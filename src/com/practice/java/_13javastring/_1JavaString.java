@@ -6,8 +6,8 @@ public class _1JavaString {
 
         String strLiteralValueOne = "str literal value";
         String strLiteralValueTwo = "str literal value";
-        String strNewValueOne = new String("String New Value");
-        String strNewValueTwo = new String("String New Value");
+        String strNewValueOne = "String New Value";
+        String strNewValueTwo = "String New Value";
 
         //Use System.identityHashCode to get proper hashcode in case of String variable created as new String()
         System.out.println("Literal strLiteralValueOne (+" + System.identityHashCode(strLiteralValueOne) + ") : " + strLiteralValueOne);

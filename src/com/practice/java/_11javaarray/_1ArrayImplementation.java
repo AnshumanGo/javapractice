@@ -4,7 +4,7 @@ public class _1ArrayImplementation {
 
     public static void main(String[] args) {
 
-        int array[] = new int[5];
+        int[] array = new int[5];
         array[0] = 10;
         array[1] = 20;
         array[2] = 50;
@@ -16,7 +16,7 @@ public class _1ArrayImplementation {
             System.out.println(array[i]);
         }
 
-        char charArray[] = {'c', 'e', 'r', 'g'};
+        char[] charArray = {'c', 'e', 'r', 'g'};
         for (int i = 0; i < charArray.length; i++) {
 
             System.out.println(charArray[i]);

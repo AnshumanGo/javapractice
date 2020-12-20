@@ -7,7 +7,7 @@ import java.util.Set;
 
 public class _1JavaGenerics {
 
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         Map<Integer, String> map = new HashMap<Integer, String>();
         map.put(1, "a");
         map.put(4, "b");
@@ -23,15 +23,21 @@ public class _1JavaGenerics {
         }
 
 
-        GenericClass<Integer> genericClass=new GenericClass<Integer>();
+        GenericClass<Integer> genericClass = new GenericClass<Integer>();
         genericClass.add(2);
         //m.add("b");//Compile time error
         System.out.println(genericClass.get());
     }
 }
 
-class GenericClass<T>{
+class GenericClass<T> {
     T obj;
-    void add(T obj){this.obj=obj;}
-    T get(){return obj;}
+
+    void add(T obj) {
+        this.obj = obj;
+    }
+
+    T get() {
+        return obj;
+    }
 }

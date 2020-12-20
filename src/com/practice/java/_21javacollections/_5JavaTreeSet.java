@@ -16,37 +16,37 @@ public class _5JavaTreeSet {
 
     public static void main(String[] args) {
 
-        TreeSet<String> treeSet=new TreeSet<String>();
+        TreeSet<String> treeSet = new TreeSet<String>();
         treeSet.add("Ram");
         treeSet.add("Shyam");
         treeSet.add("Ram");
         treeSet.add("Ghanshyam");
 
-        Iterator<String> itr=treeSet.iterator();
-        while(itr.hasNext()){
+        Iterator<String> itr = treeSet.iterator();
+        while (itr.hasNext()) {
             System.out.println(itr.next());
         }
 
         System.out.println("Traversing element through Iterator in descending order");
-        Iterator i=treeSet.descendingIterator();
-        while(i.hasNext()) {
+        Iterator i = treeSet.descendingIterator();
+        while (i.hasNext()) {
             System.out.println(i.next());
         }
 
         System.out.println("Reverse Set using descendingSet()");
-        i=treeSet.descendingSet().iterator();
-        while(i.hasNext()) {
+        i = treeSet.descendingSet().iterator();
+        while (i.hasNext()) {
             System.out.println(i.next());
         }
 
-        System.out.println("Highest Value: "+treeSet.pollFirst());
+        System.out.println("Highest Value: " + treeSet.pollFirst());
 
-        System.out.println("Lowest Value: "+treeSet.pollLast());
+        System.out.println("Lowest Value: " + treeSet.pollLast());
 
-        System.out.println("Head Set: "+treeSet.headSet("C", true));
+        System.out.println("Head Set: " + treeSet.headSet("C", true));
 
-        System.out.println("SubSet: "+treeSet.subSet("A", false, "E", true));
+        System.out.println("SubSet: " + treeSet.subSet("A", false, "E", true));
 
-        System.out.println("TailSet: "+treeSet.tailSet("C", false));
+        System.out.println("TailSet: " + treeSet.tailSet("C", false));
     }
 }

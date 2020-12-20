@@ -2,7 +2,7 @@ package com.practice.java._6javaoops;
 
 public class _2StaticKeyword {
 
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         Student.change();
 
         Student s1 = new Student(1, "ramesh");

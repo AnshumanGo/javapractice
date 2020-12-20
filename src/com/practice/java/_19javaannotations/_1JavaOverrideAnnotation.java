@@ -1,13 +1,13 @@
 package com.practice.java._19javaannotations;
 
-public class _1JavaOverrideAnnotation extends _1JavaOverrideAnnotationParent{
+public class _1JavaOverrideAnnotation extends _1JavaOverrideAnnotationParent {
 
     //@Override /// You can not override static method in java
-    static void testOverride(){
+    static void testOverride() {
 
     }
 
-    void testNonStaticOverride(){
+    void testNonStaticOverride() {
 
         System.out.println("child test non static override without override annotation");
     }
@@ -19,9 +19,9 @@ public class _1JavaOverrideAnnotation extends _1JavaOverrideAnnotationParent{
     }*/
 }
 
-class _1JavaOverrideAnnotationParent{
+class _1JavaOverrideAnnotationParent {
 
-    static void testOverride(){
+    static void testOverride() {
 
         System.out.println("Parent test override");
     }
