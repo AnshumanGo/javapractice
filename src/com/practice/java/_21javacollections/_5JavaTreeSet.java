@@ -6,6 +6,7 @@ import java.util.TreeSet;
 public class _5JavaTreeSet {
 
     /*
+    Java TreeSet  extends AbstractSet<E> and implements NavigableSet<E>, Cloneable, java.io.Serializable
     Java TreeSet class contains unique elements only like HashSet.
     Java TreeSet class access and retrieval times are quiet fast.
     Java TreeSet class doesn't allow null element.

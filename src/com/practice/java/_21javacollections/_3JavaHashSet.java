@@ -6,12 +6,13 @@ import java.util.Iterator;
 public class _3JavaHashSet {
 
     /*
-    HashSet stores the elements by using a mechanism called hashing.
-    HashSet contains unique elements only.
-    HashSet allows null value.
-    HashSet class is non synchronized.
-    HashSet doesn't maintain the insertion order. Here, elements are inserted on the basis of their hashcode.
-    HashSet is the best approach for search operations.
+    Java HashSet extends AbstractSet<E> and implements Set<E>, Cloneable, java.io.Serializable
+    Java HashSet stores the elements by using a mechanism called hashing.
+    Java HashSet contains unique elements only.
+    Java HashSet allows null value.
+    Java HashSet class is non synchronized.
+    Java HashSet doesn't maintain the insertion order. Here, elements are inserted on the basis of their hashcode.
+    Java HashSet is the best approach for search operations.
     The initial default capacity of HashSet is 16, and the load factor is 0.75.
     */
 

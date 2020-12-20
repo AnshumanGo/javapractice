@@ -4,6 +4,14 @@ import java.util.LinkedList;
 
 public class _2JavaLinkedList {
 
+    /*
+    Java LinkedList extends AbstractSequentialList<E> and implements List<E>, Deque<E>, Cloneable, java.io.Serializable
+    Java LinkedList class can contain duplicate elements.
+    Java LinkedList class maintains insertion order.
+    Java LinkedList class is non synchronized.
+    In Java LinkedList class, manipulation is fast because no shifting needs to occur.
+    Java LinkedList class can be used as a list, stack or queue.
+    */
     public static void main(String args[]){
         LinkedList<String> linkedList=new LinkedList<String>();
         System.out.println("List of Animals: "+linkedList);

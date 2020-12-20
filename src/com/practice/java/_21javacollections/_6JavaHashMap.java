@@ -6,6 +6,7 @@ import java.util.Map;
 public class _6JavaHashMap {
 
     /*
+    Java HashMap  extends AbstractMap<K,V> and implements Map<K,V>, Cloneable, Serializable
     Java HashMap contains values based on the key.
     Java HashMap contains only unique keys.
     Java HashMap may have one null key and multiple null values.

@@ -8,12 +8,13 @@ import java.util.Iterator;
 public class _1JavaArrayList {
 
     /*
+    Java ArrayList extends AbstractList<E> and implements List<E>, RandomAccess, Cloneable, java.io.Serializable
     Java ArrayList class can contain duplicate elements.
     Java ArrayList class maintains insertion order.
     Java ArrayList class is non synchronized.
     Java ArrayList allows random access because array works at the index basis.
     In ArrayList, manipulation is little bit slower than the LinkedList in Java because a lot of shifting needs to occur if any element is removed from the array list.
-*/
+    */
     public static void main(String[] args) {
 
         ArrayList<String> list=new ArrayList<String>();//Creating arraylist

@@ -6,6 +6,7 @@ import java.util.LinkedHashSet;
 public class _4JavaLinkedHashSet {
 
     /*
+    Java LinkedHashSet extends HashSet<E> and implements Set<E>, Cloneable, java.io.Serializable
     Java LinkedHashSet class contains unique elements only like HashSet.
     Java LinkedHashSet class provides all optional set operation and permits null elements.
     Java LinkedHashSet class is non synchronized.
