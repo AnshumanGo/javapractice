@@ -3,7 +3,7 @@ package com.practice.java._21javacollections;
 import java.util.ArrayDeque;
 import java.util.Deque;
 
-public class _17ArrayDeque {
+public class _17JavaArrayDeque {
 
     /*
     Java Deque extends Queue<E>
