@@ -41,3 +41,4 @@ classes/
 abc.txt
 JavaBufferWriterAndReaderFile.txt
 JavaBufferedOutputStreamAndBufferedInputStream.txt
+fileJavaSerializationAndDeserialization.txt
