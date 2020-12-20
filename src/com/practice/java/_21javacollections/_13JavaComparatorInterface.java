@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 
-public class _12JavaComparatorInterface {
+public class _13JavaComparatorInterface {
 
     public static void main(String[] args) {
 
