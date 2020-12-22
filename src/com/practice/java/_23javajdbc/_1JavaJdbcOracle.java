@@ -1,12 +1,13 @@
 package com.practice.java._23javajdbc;
 
+/*
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
 
 
-/*This is sample program. Please add oracle dependency while running program*/
+This is sample program. Please add oracle dependency while running program
 public class _1JavaJdbcOracle {
 
     public static void main(String[] args) {
@@ -34,3 +35,4 @@ public class _1JavaJdbcOracle {
 
     }
 }
+*/
