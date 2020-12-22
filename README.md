@@ -13,4 +13,26 @@ javac -d target/classes src/main/java/<package_name/(s)>/<classname>.java
 java -classpath target/classes <package_name.(s)>.<classname>
 
 <h3>Java Topics</h3>
-![img.png](img.png)
+_1firstjavaprogram
+<br>_2variables
+<br>_3datatypes
+<br>_4operators
+<br>_5controlstatements
+<br>_6javaoops
+<br>_7javainheritance
+<br>_8javapolymorphism
+<br>_9javaabstraction
+<br>_10javaencapsulation
+<br>_11javaarray
+<br>_12javamisc
+<br>_13javastring
+<br>_14exceptionhandling
+<br>_15javamultithreading
+<br>_16javaruntimeclass
+<br>_17javainnerclassandinterface
+<br>_18javagenerics
+<br>_19javaannotations
+<br>_20javaenum
+<br>_21javacollections
+<br>_22javaio
+<br>_23javajdbc
