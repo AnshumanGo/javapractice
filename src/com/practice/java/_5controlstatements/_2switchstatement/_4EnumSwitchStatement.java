@@ -14,7 +14,7 @@ public class _4EnumSwitchStatement {
             case English:
                 System.out.println("Subject is English");
                 break;
-            case Mathemetics:
+            case Mathematics:
                 System.out.println("Subject is Mathematics");
                 break;
             default:
@@ -22,5 +22,5 @@ public class _4EnumSwitchStatement {
         }
     }
 
-    enum Subject {Hindi, English, Mathemetics}
+    enum Subject {Hindi, English, Mathematics}
 }

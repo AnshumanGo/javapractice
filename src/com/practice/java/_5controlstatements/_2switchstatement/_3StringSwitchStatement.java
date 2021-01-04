@@ -4,9 +4,9 @@ public class _3StringSwitchStatement {
 
     public static void main(String[] args) {
 
-        String classStndard = "eigth";
+        String classStandard = "eighth";
 
-        switch (classStndard) {
+        switch (classStandard) {
 
             case "fifth":
             case "eighth":

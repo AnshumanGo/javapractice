@@ -1,4 +1,4 @@
-package com.practice.java._6javaoops;
+ package com.practice.java._6javaoops;
 
 public class _2StaticKeyword {
 
@@ -17,11 +17,11 @@ public class _2StaticKeyword {
 
 class Student {
     static String college = "ITGGU";
-    int rollno;
+    int rollNo;
     String name;
 
     Student(int r, String n) {
-        rollno = r;
+        rollNo = r;
         name = n;
     }
 
@@ -30,6 +30,6 @@ class Student {
     }
 
     void displayDetails() {
-        System.out.println(rollno + " " + name + " " + college);
+        System.out.println(rollNo + " " + name + " " + college);
     }
 }

@@ -13,7 +13,7 @@ package com.practice.java._8javapolymorphism;
     * if necessary, create copies, and store references to the copies.
     * Similarly, create copies of your internal mutable objects when necessary to avoid returning the originals in your methods.
 */
-public class _10ImmutableClass {
+public final class _10ImmutableClass {
 
     private final String name;
     private final int regNo;
