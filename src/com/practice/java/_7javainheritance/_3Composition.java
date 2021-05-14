@@ -3,9 +3,13 @@ package com.practice.java._7javainheritance;
 public class _3Composition {
 
     public static void main(String[] args) {
-        Square s = new Square(new CalculationUtil());
-        double result = s.area(5);
-        System.out.println(result);
+
+        College college = new College();
+        college.address="Address";
+
+        College.Department department = college.new Department();
+        System.out.println(department.getAddress());
+
     }
 }
 
@@ -13,16 +17,15 @@ public class _3Composition {
     Life time of composition is with parent calling object.
     Once parent calling object is destroyed child is destroyed.
 */
-class Square {
+class College {
 
-    private final CalculationUtil calculation;
+    String address;
 
-    Square(CalculationUtil calculation) {
+    class Department{
 
-        this.calculation = new CalculationUtil();
-    }
+        String getAddress(){
 
-    double area(int radius) {
-        return calculation.square(radius);
+            return College.this.address;
+        }
     }
 }
