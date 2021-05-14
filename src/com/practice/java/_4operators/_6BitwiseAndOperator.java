@@ -14,5 +14,7 @@ public class _6BitwiseAndOperator {
         System.out.println(isLessThanIntValue(a, b) & isLessThanIntValue(a, c));
         System.out.println(isGreaterThanIntValue(a, b) & isLessThanIntValue(a, c));
         System.out.println(isGreaterThanIntValue(a, b) & isGreaterThanIntValue(a, c));
+
+        System.out.println(a & b);
     }
 }
