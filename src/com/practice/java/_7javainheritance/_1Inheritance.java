@@ -15,7 +15,6 @@ public class _1Inheritance {
         CsEngineeringStudent studentTwo = new CsEngineeringStudent();
         studentTwo.id = 2;
         studentTwo.name = "csone";
-        studentTwo.engineeringSubject = "common engineering subjects";
         studentTwo.csEngineeringSubject = "cs engineering subjects";
 
         //Details of CsEngineeringStudent object is shown using overriding toString method
@@ -25,7 +24,6 @@ public class _1Inheritance {
         EcEngineeringStudent studentThree = new EcEngineeringStudent();
         studentThree.id = 3;
         studentThree.name = "econe";
-        studentThree.engineeringSubject = "common engineering subjects";
         studentThree.ecEngineeringSubject = "ec engineering subjects";
 
         //Details of EcEngineeringStudent object is shown using overriding toString method

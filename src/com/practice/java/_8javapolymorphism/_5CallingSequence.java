@@ -19,6 +19,8 @@ public class _5CallingSequence {
 
 class ParentCall {
 
+    int pcCount =1;
+    int pcTwoCount;
     static {
 
         System.out.println("SIB2 Parent call");
@@ -90,6 +92,7 @@ class ChildCall extends ParentCall {
     }
 
     {
+        pcTwoCount =2;
         System.out.println("IIB2 Child call");
     }
 

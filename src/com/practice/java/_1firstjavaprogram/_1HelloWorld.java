@@ -1,8 +1,33 @@
 package com.practice.java._1firstjavaprogram;
 
 public class _1HelloWorld {
+/*
+* If void keyword is removed then it will have two errors, methods need to have return type and static can not be used
+* If static keyword is removed, Main method is not static in class
+* If public keyword is removed , Main method not found in class
+* If public and static keyword is removed , Main method not found in class
+* If main removed then it will give error, java: <identifier> expected
+* */
+     public static void main(String[] args) {
 
-    public static void main(String[] args) {
+         /*
+         * Is System is removed,it will give error "cannot find symbol, symbol: variable out
+         * location: class com.practice.java._1firstjavaprogram._1HelloWorld"
+         *
+         * If out is removed from below it will give "cannot find symbol, symbol:   method println(java.lang.String)
+         * location: class java.lang.System"
+         *
+         * If println is removed from below it will give "cannot find symbol, symbol:   method out(java.lang.String)
+         * location: class java.lang.System"
+         *
+         * If out and println removed, then it will give error "cannot find symbol, symbol:   method System(java.lang.String)
+         * location: class com.practice.java._1firstjavaprogram._1HelloWorld"
+         *
+         * If System and out removed, then it will give error "cannot find symbol, symbol:   method println(java.lang.String)
+         * location: class com.practice.java._1firstjavaprogram._1HelloWorld"
+         *
+         * Similarly if a dot(.) is missed then it will give relative symbol not found
+         * */
 
         System.out.println("_1HelloWorld.main");
 
