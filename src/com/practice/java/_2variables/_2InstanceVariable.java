@@ -17,6 +17,10 @@ public class  _2InstanceVariable {
         System.out.println("instance variable int i value for instanceVariableTwo object :" + instanceVariableTwo.i);
         System.out.println("instance variable int strValue value for instanceVariableTwo object :" + instanceVariableTwo.strValue);
 
+        /*
+        * Update i and strValue for instanceVariableOne and check current value of  i and strValue for instanceVariableOne
+        * and instanceVariableTwo
+        * */
         instanceVariableOne.i = 20;
         instanceVariableOne.strValue="testOne";
 
@@ -25,6 +29,10 @@ public class  _2InstanceVariable {
         System.out.println("instance variable int i value for instanceVariableTwo object :" + instanceVariableTwo.i);
         System.out.println("instance variable int strValue value for instanceVariableTwo object :" + instanceVariableTwo.strValue);
 
+        /*
+         * Update i and strValue for instanceVariableTwo and check current value of  i and strValue for instanceVariableOne
+         * and instanceVariableTwo
+         * */
         instanceVariableTwo.i = 30;
         instanceVariableTwo.strValue="testTwo";
         System.out.println("instance variable int i value for instanceVariableOne object :" + instanceVariableOne.i);
