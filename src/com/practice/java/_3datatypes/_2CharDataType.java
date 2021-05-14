@@ -7,8 +7,8 @@ public class _2CharDataType {
 
     public static void main(String[] args) {
 
-        System.out.println("value of Character data charOne : " + new _2CharDataType().charOne);
-        System.out.println("value of Character data charTwo : " + new _2CharDataType().charTwo);
+        System.out.println("Value of Character data charOne : " + new _2CharDataType().charOne);
+        System.out.println("Default value of Character data charTwo : " + new _2CharDataType().charTwo);
 
         System.out.println("Max ascii value of Character data type : " + (int) Character.MAX_VALUE);
         System.out.println("Max value of Character data type : " + Character.MAX_VALUE);
